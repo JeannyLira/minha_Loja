@@ -4,15 +4,56 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Barra de Menu</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Barra de Menu Fixa</title>
+        <style>
+          
+             {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+           
+            .menu {
+                background-color: #333;
+                color: white;
+                padding: 15px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: Arial, sans-serif;
+            }
+    
+            .menu a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+    
+            .menu a:hover {
+                background-color: #555;
+                border-radius: 5px;
+            }
+    
+        
+            .content {
+                margin-top: 60px; 
+                padding: 20px;
+            }
+    
+            .product {
+                background-color: #f4f4f4;
+                padding: 15px;
+                margin: 15px 0;
+                border: 1px solid #ddd;
+            }
+        </style>
     </head>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de Menu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    
 <body>
 
     <header>
@@ -21,9 +62,9 @@
                 <a href="#">MeuSite</a>
             </div>
             <ul class="menu">
-              <li><a href="#produtos">Início</a></li>
-              <li><a href="#carrinho">Serviços</a></li>
-              <li><a href="#pagamento">Contato</a></li>
+              <li><a href="#produtos">produtos</a></li>
+              <li><a href="#carrinho">carrinho</a></li>
+              <li><a href="#pagamento">pagamento</a></li>
             </ul>
         </nav>
     </header>
@@ -119,52 +160,3 @@
     }
 </style>
 
-</style>
- 
-<style>
-    /* Resetando margens e preenchimentos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo da barra de menu */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 15px 30px;
-}
-
-.navbar .logo a {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar .menu {
-    list-style: none;
-    display: flex;
-}
-
-.navbar .menu li {
-    margin-left: 20px;
-}
-
-.navbar .menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 15px;
-    transition: background-color 0.3s;
-}
-
-.navbar .menu li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-
-</style>
