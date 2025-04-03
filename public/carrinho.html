@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+   <div> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barra de Menu Fixa</title>
+        <style>
+          
+             {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+           
+            .menu {
+                background-color: #333;
+                color: white;
+                padding: 15px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: Arial, sans-serif;
+            }
+    
+            .menu a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+    
+            .menu a:hover {
+                background-color: #555;
+                border-radius: 5px;
+            }
+    
+        
+            .content {
+                margin-top: 60px; 
+                padding: 20px;
+            }
+    
+            .product {
+                background-color: #f4f4f4;
+                padding: 15px;
+                margin: 15px 0;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    
 <body>
-    <div>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Barra de Menu</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-        
-            <header>
-                <nav class="navbar">
-                    <div class="logo">
-                        <a href="#">MeuSite</a>
-                    </div>
-                    <ul class="menu">
-                        <li><a href="#produtos">Início</a></li>
-                        <li><a href="#carrinho">Serviços</a></li>
-                        <li><a href="#pagamento">Contato</a></li>
-                    </ul>
-                </nav>
-            </header>
-        
-        </body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MeuSite</a>
+            </div>
+            <ul class="menu">
+              <li><a href="#produtos">produtos</a></li>
+              <li><a href="#carrinho">carrinho</a></li>
+              <li><a href="#pagamento">pagamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
     </div>
     <div class="container">
         <header>
@@ -38,7 +78,7 @@
 
         <div class="cart">
             <div class="cart-item">
-                <img src="https://i.etsystatic.com/25420012/r/il/55152a/3004030842/il_fullxfull.3004030842_rd50.jpg" alt="Produto 1">
+                <img src="https://i.etsystatic.com/25420012/r/il/55152a/3004030842/il_fullxfull.3004030842_rd50.jpg" alt="Camiseta Jujutsu kaisen">
                 <div class="item-details">
                     <p class="item-name">Camiseta Jujutsu kaisen</p>
                     <p class="item-price">R$ 60,90</p>
@@ -47,9 +87,9 @@
             </div>
 
             <div class="cart-item">
-                <img src="https://via.placeholder.com/100" alt="Produto 2">
+                <img src="https://via.placeholder.com/100" alt="Calça do clã Uzumaki e uchiha">
                 <div class="item-details">
-                    <p class="item-name">Produto 2</p>
+                    <p class="item-name">Calça do clã Uzumaki e uchiha</p>
                     <p class="item-price">R$ 79,99</p>
                 </div>
                 <button class="remove-btn">Remover</button>
