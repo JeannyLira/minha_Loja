@@ -1,252 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de Menu Fixa</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-
-        .menu {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        .menu a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-
-        .content {
-            margin-top: 60px; 
-            padding: 20px;
-        }
-
-        .product {
-            background-color: #f4f4f4;
-            padding: 15px;
-            margin: 15px 0;
-            border: 1px solid #ddd;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 15px 30px;
-        }
-
-        .navbar .logo a {
-            color: #fff;
-            font-size: 24px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .navbar .menu {
-            list-style: none;
-            display: flex;
-        }
-
-        .navbar .menu li {
-            margin-left: 20px;
-        }
-
-        .navbar .menu li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 8px 15px;
-            transition: background-color 0.3s;
-        }
-
-        .navbar .menu li a:hover {
-            background-color: #575757;
-            border-radius: 5px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 2rem;
-        }
-
-        .cart {
-            margin-bottom: 30px;
-        }
-
-        .cart-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 6px;
-        }
-
-        .cart-item img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-        }
-
-        .item-details {
-            flex-grow: 1;
-            margin-left: 20px;
-        }
-
-        .item-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .item-price {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .remove-btn {
-            background-color: #ff4747;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .remove-btn:hover {
-            background-color: #ff2e2e;
-        }
-
-        .total {
-            text-align: right;
-            margin-top: 20px;
-        }
-
-        .total p {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .total span {
-            color: #ff4747;
-        }
-
-        .checkout-btn {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-        }
-
-        .checkout-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
+<html lang="pt-br">
+<div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barra de Menu Fixa</title>
+        <style>
+          
+             {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+           
+            .menu {
+                background-color: #333;
+                color: white;
+                padding: 15px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: Arial, sans-serif;
+            }
+    
+            .menu a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+    
+            .menu a:hover {
+                background-color: #555;
+                border-radius: 5px;
+            }
+    
+        
+            .content {
+                margin-top: 60px; 
+                padding: 20px;
+            }
+    
+            .product {
+                background-color: #f4f4f4;
+                padding: 15px;
+                margin: 15px 0;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    
 <body>
 
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">MeuSite</a>
-            </div>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href= >MeuSite</a>
+                </div>
             <ul class="menu">
-                <li><a href="produtos">produtos</a></li>
-                <li><a href="carrinho">carrinho</a></li>
-                <li><a href="pagamento">pagamento</a></li>
+              <li><a href="#produtos">produtos</a></li>
+              <li><a href="#carrinho">carrinho</a></li>
+              <li><a href="#pagamento">pagamento</a></li>
             </ul>
         </nav>
     </header>
 
+</body>
+</div>
+<body>
     <div class="container">
-        <header>
-            <h1>Carrinho de Compras</h1>
-        </header>
-
-        <div class="cart">
-            <div class="cart-item">
-                <img src="https://i.etsystatic.com/25420012/r/il/55152a/3004030842/il_fullxfull.3004030842_rd50.jpg" alt="Camiseta Jujutsu kaisen">
-                <div class="item-details">
-                    <p class="item-name">Camiseta Jujutsu kaisen</p>
-                    <p class="item-price">R$ 60,90</p>
-                </div>
-                <button class="remove-btn">Remover</button>
-            </div>
-
-            <div class="cart-item">
-                <img src="https://ae01.alicdn.com/kf/S2bf50be22573465fb333a5c2ec75dfe2T/Pantalones-de-ch-ndal-de-Anime-para-Cosplay-trajes-de-la-familia-esp-a-Loid-Anya.jpg" alt="Calça do clã Uzumaki e uchiha">
-                <div class="item-details">
-                    <p class="item-name">Calça do clã Uzumaki e uchiha</p>
-                    <p class="item-price">R$ 79,99</p>
-                </div>
-                <button class="remove-btn">Remover</button>
-            </div>
-
-            <div class="cart-item">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_672107-CBT77456953057_072024-F-moletom-de-anime-u-attack-on-titan-aot-levi-ackerman.webp0" alt="Produto 1">
-                <div class="item-details">
-                    <p class="item-name">Produto 1</p>
-                    <p class="item-price">R$ 49,99</p>
-                </div>
-                <button class="remove-btn">Remover</button>
-            </div>
+        <div class="product-card">
+            <img src="https://i.etsystatic.com/25420012/r/il/55152a/3004030842/il_fullxfull.3004030842_rd50.jpg" alt="Camiseta Naruto" class="product-image">
+            <h2 class="product-title">Camiseta Jujutsu kaisen</h2>
+            <p class="product-description">Camiseta estilizada com estampa do Yuji e Gojo. Material confortável e de alta qualidade.</p>
+            <p class="product-price">R$ 60,90</p>
+            <button class="buy-button">Comprar Agora</button>
         </div>
 
-        <div class="total">
-            <p>Total: <span>R$ 129,98</span></p>
-            <button class="checkout-btn">Finalizar Compra</button>
+        <div class="product-card">
+            <img src="https://ae01.alicdn.com/kf/S2bf50be22573465fb333a5c2ec75dfe2T/Pantalones-de-ch-ndal-de-Anime-para-Cosplay-trajes-de-la-familia-esp-a-Loid-Anya.jpg" alt="Camiseta Naruto" class="product-image">
+            <h2 class="product-title">Calça do clã Uzumaki e uchiha</h2>
+            <p class="product-description">Calça estilizada com detalhes do clã Uzumaki e uchiha. Material confortável e de alta qualidade.</p>
+            <p class="product-price">R$ 70,99</p>
+            <button class="buy-button">Comprar Agora</button>
         </div>
+
+        <div class="product-card">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_672107-CBT77456953057_072024-F-moletom-de-anime-u-attack-on-titan-aot-levi-ackerman.webp" alt="Mochila Attack on Titan" class="product-image">
+            <h2 class="product-title">Moletom Attack on Titan Levi</h2>
+            <p class="product-description">Moletom resistente com design inspirado em Attack on Titan.</p>
+            <p class="product-price">R$ 110,00</p>
+            <button class="buy-button">Comprar Agora</button>
+        </div>
+   
     </div>
 
 </body>
 </html>
-
 
 <style>
     body {
