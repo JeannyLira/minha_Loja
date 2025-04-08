@@ -167,7 +167,7 @@
             <h2 class="product-title">Camiseta Jujutsu kaisen</h2>
             <p class="product-description">Camiseta estilizada com estampa do Yuji e Gojo. Material confortável e de alta qualidade.</p>
             <p class="product-price">R$ 60,90</p>
-            <button class="buy-button">Comprar Agora</button>
+            <button class="buy-button" onclick="comprarAgora('Camiseta Jujutsu Kaisen')">Comprar Agora</button>
         </div>
 
         <div class="product-card">
@@ -175,7 +175,7 @@
             <h2 class="product-title">Calça spyxfamily</h2>
             <p class="product-description">Calça estilizada com detalhes de spyxfamily. Material confortável e de alta qualidade.</p>
             <p class="product-price">R$ 70,99</p>
-            <button class="buy-button">Comprar Agora</button>
+            <button class="buy-button" onclick="comprarAgora('Calça Spyxfamily')">Comprar Agora</button>
         </div>
 
         <div class="product-card">
@@ -183,9 +183,20 @@
             <h2 class="product-title">Moletom Attack on Titan Levi</h2>
             <p class="product-description">Moletom resistente com design inspirado em Attack on Titan.</p>
             <p class="product-price">R$ 110,00</p>
-            <button class="buy-button">Comprar Agora</button>
+            <button class="buy-button" onclick="comprarAgora('Moletom Attack on Titan')">Comprar Agora</button>
         </div>
     </div>
+
+    <p class="message" id="message"></p>
+
+    <script>
+        function comprarAgora(produto) {
+            const message = document.getElementById('message');
+            message.textContent = `Você adicionou "${produto}" ao carrinho. Continue sua compra ou finalize a compra!`;
+            message.style.display = 'block';
+        }
+        
+    </script>
 </body>
 </html>
 
